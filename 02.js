@@ -12,7 +12,14 @@
  * @param {string} title
  * @returns {Array} 새로운 todos 배열
  */
-function createTodo(todos, title) {}
+function createTodo(todos, title) {
+    const newTodo = {
+        id: Math.random().toString,
+        title: title,
+        compledted: false
+    }
+    todos.push(newTodo);
+}
 
 // export 수정 불가
 export { createTodo };
