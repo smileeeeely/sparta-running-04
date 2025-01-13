@@ -11,7 +11,7 @@
  * @returns {Array} 새로운 todos 배열
  */
 function deleteTodo(todos, id) {
-
+    return todos.filter((todo) => todo.id !== id);
 }
 
 // export 수정 불가
